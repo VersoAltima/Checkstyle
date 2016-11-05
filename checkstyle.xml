@@ -201,10 +201,6 @@
         <module name="JavadocParagraph">
             <property name="severity" value="info"/>
         </module>
-        <module name="AtclauseOrder">
-            <property name="tagOrder" value="@param, @return, @throws, @deprecated"/>
-            <property name="target" value="CLASS_DEF, INTERFACE_DEF, ENUM_DEF, METHOD_DEF, CTOR_DEF, VARIABLE_DEF"/>
-        </module>
         <module name="JavadocMethod">
             <property name="severity" value="info"/>
             <property name="scope" value="public"/>
