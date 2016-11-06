@@ -19,6 +19,7 @@ This is the checkstyle used by Altima, based on Google Java styleguide conventio
         <logViolationsToConsole>true</logViolationsToConsole>
         <failOnViolation>true</failOnViolation>
         <failsOnError>true</failsOnError>
+        <includeTestSourceDirectory>true</includeTestSourceDirectory>
     </configuration>
     <executions>
         <execution>
