@@ -32,3 +32,8 @@ This is the checkstyle used by Altima, based on Google Java styleguide conventio
     </executions>
 </plugin>
 ```
+You can check your code by executing:
+
+```
+mvn checkstyle:check
+```
