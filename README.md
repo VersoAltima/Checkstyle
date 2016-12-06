@@ -37,3 +37,32 @@ You can check your code by executing:
 ```
 mvn checkstyle:check
 ```
+
+You can suppress specific files-checks pairs:
+
+1) Extend checkstyle plugin <configuration> by adding:
+
+```xml
+	<!-- Suppress specific file for specific checks -->
+    <suppressionsLocation>checkstyle-suppressions.xml</suppressionsLocation>
+    <suppressionsFileExpression>checkstyle.suppressions.file</suppressionsFileExpression>
+```
+
+2) Create checkstyle-suppressions.xml file with defined suppressions:
+
+```xml
+<?xml version="1.0"?>
+<!DOCTYPE suppressions PUBLIC
+        "-//Puppy Crawl//DTD Suppressions 1.1//EN"
+        "http://www.puppycrawl.com/dtds/suppressions_1_1.dtd">
+
+<suppressions>
+
+    <!-- AbbreviationAsWordInName -->
+    <suppress checks="AbbreviationAsWordInName" files="SampleClass.java"/>
+
+    <!-- MemberName and ParameterName -->
+    <suppress checks="MemberName|ParameterName" files="SampleClass.java"/>
+
+</suppressions>
+```
