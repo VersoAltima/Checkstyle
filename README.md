@@ -38,6 +38,14 @@ You can check your code by executing:
 mvn checkstyle:check
 ```
 
+## Supressing checks
+
+### Via annotations
+
+You can supress checks on parts of the code using the `@SuppressWarnings("checkstyle:CHECK_NAME")` annotation where `CHECK_NAME` is name of the check module in lowercase (e.g. `whitespacearound`).
+
+### Via external configuration
+
 You can suppress specific files-checks pairs:
 
 1) Extend checkstyle plugin <configuration> by adding:
