@@ -4,6 +4,7 @@ This is the checkstyle used by Altima, based on Google Java styleguide conventio
 
 ```xml
 <plugin>
+	<groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-checkstyle-plugin</artifactId>
     <version>2.17</version>
     <dependencies>
